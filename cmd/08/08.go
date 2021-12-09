@@ -83,6 +83,7 @@ func makeDecoder(patterns []string) Decoder {
 	switch {
 	case intersectCount(d235[0], d235[1]) == 3:
 		d3 = d235[2]
+
 		if intersectCount(d235[0], d4) == 2 {
 			d2 = d235[0]
 			d5 = d235[1]
@@ -91,6 +92,8 @@ func makeDecoder(patterns []string) Decoder {
 			d5 = d235[0]
 		}
 	case intersectCount(d235[0], d235[2]) == 3:
+		d3 = d235[1]
+		
 		if intersectCount(d235[0], d4) == 2 {
 			d2 = d235[0]
 			d5 = d235[2]
@@ -98,9 +101,9 @@ func makeDecoder(patterns []string) Decoder {
 			d2 = d235[2]
 			d5 = d235[0]
 		}
-		d3 = d235[1]
 	case intersectCount(d235[1], d235[2]) == 3:
 		d3 = d235[0]
+
 		if intersectCount(d235[1], d4) == 2 {
 			d2 = d235[1]
 			d5 = d235[2]
@@ -113,6 +116,7 @@ func makeDecoder(patterns []string) Decoder {
 	switch {
 	case intersectCount(d069[0], d1) == 1:
 		d6 = d069[0]
+
 		if intersectCount(d069[1], d5) == 5 {
 			d9 = d069[1]
 			d0 = d069[2]
@@ -122,6 +126,7 @@ func makeDecoder(patterns []string) Decoder {
 		}
 	case intersectCount(d069[1], d1) == 1:
 		d6 = d069[1]
+
 		if intersectCount(d069[0], d5) == 5 {
 			d9 = d069[0]
 			d0 = d069[2]
@@ -131,6 +136,7 @@ func makeDecoder(patterns []string) Decoder {
 		}
 	case intersectCount(d069[2], d1) == 1:
 		d6 = d069[2]
+
 		if intersectCount(d069[0], d5) == 5 {
 			d9 = d069[0]
 			d0 = d069[1]
